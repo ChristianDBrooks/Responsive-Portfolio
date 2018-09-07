@@ -5,8 +5,8 @@ html {
 
 body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    margin: 0 0 100px;
     padding: 0px;
+    margin: 0;
 }
 
 header {
@@ -97,7 +97,7 @@ p {
     float: left;
     height: 160px;
     margin: 0px;
-    line-height: 200%;
+    line-height: 40px;
 }
 .p2 {
     width: 100%;
@@ -175,8 +175,8 @@ textarea {
 }
 
 .grid img {
+    float: left;
     position: relative;
-    margin-bottom: 23px;
     z-index: 0;
 }
 
@@ -191,6 +191,122 @@ span {
     z-index: 1;
 }
 
+.gridDiv {
+    width: 300px;
+    margin-bottom: 23px;
+    /* margin-right: 23px; */
+    float: left;
+}
+
 .leftImg {
     margin-right: 23px;
+}
+
+@media (max-width: 980px) {
+    section {
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    .name {
+        margin-left: 5%;
+    }
+
+    .navbar {
+        margin-right: 5%;
+    }
+
+    .p1 {
+        overflow: auto;
+        width: 350px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .gridDiv {
+        width: 300px
+        margin-bottom: 23px;
+        /* margin-right: 23px; */
+        float: left;
+    }
+    
+    .leftImg {
+        margin-right: none;
+    }
+    
+    .grid {
+        overflow: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 85%;
+        margin-left: 5%;
+    }
+
+    .name {
+        margin-left: 5%;
+    }
+
+    .navbar {
+        margin-right: 5%;
+    }
+
+    .p1 {
+        overflow: auto;
+        width: 350px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .grid {
+        overflow: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .name {
+        margin: 0;
+        padding: 25px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .navbar {
+        margin: 0;
+        padding: 10px 0;
+        float: none;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+    }
+
+    section {
+        width: 87.5%;
+        display: block;
+        margin: auto;
+    }
+
+    .profile-pic {
+        width: 100%;
+        float: left;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+    
+
+    p {
+        overflow: auto;
+        font-size: 1rem;
+        line-height: 0px;
+    }
 }
